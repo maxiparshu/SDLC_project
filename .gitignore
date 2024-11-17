@@ -1,0 +1,8 @@
+.idea
+.buildozer
+check.txt
+temp.txt
+example.txt
+bin
+binary_matrix.txt
+__pycache__

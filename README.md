@@ -1,0 +1,1 @@
+Ссылка на доки киви https://kivy.org/doc/stable/guide/lang.html https://pythonist.ru/kivy-python-framework/#getting-started matplotlib opencv tensorflow mediapipe numpy kivy
