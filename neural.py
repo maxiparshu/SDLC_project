@@ -31,8 +31,8 @@ f = open("logs.txt", "w+")
 
 class Neural:
 
-    def __init__(self, input_len, output_len, reg_lambda=0.01, dropout_p=0.4, learning_rate=0.075):
-        hidden_len = 80
+    def __init__(self, input_len, output_len, reg_lambda=0.01, dropout_p=0.5, learning_rate=0.005):
+        hidden_len = 100
         self.output_len = output_len
         self.input_len = input_len
         self.layer1 = Dense(input_len, hidden_len, reg_lambda=reg_lambda)
@@ -100,7 +100,7 @@ class Neural:
         self.output_layer.set_weight(W2, b2)
         self.dropout.set_p(p)
 
-    def train(self, epochs=1000, batch_size=128):
+    def train(self, epochs=1000, batch_size=64):
         # Обучение сети
         for epoch in range(epochs):
 
